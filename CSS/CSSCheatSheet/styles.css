@@ -6,6 +6,7 @@
 }
 */
 
+/*Global Styles*/
 h1{
     color: #444;
 }
@@ -22,6 +23,24 @@ body{
     margin: 0;
 } 
 
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.button{
+    background-color: #ac2027;
+    color: #f5f5f5;
+    padding: 10px 15px;
+    border: none;
+}
+
+.clr{
+    clear: both;
+}
+
+/*Local styles*/
+
 .box-1{
     background-color: #cd1272;
     /*apply it for all sides*/
@@ -34,10 +53,6 @@ body{
     margin: 20px;
 }
 
-.container{
-    width: 80%;
-    margin: auto;
-}
 
 .box-1 h1 {
     font-family: Tahoma;
@@ -73,3 +88,92 @@ p{
     list-style: none;
 }
 
+.my-form{
+    padding: 20px;
+}
+
+.my-form .form-group{
+   padding-bottom: 15px; 
+}
+
+.my-form label{ 
+    display: block;
+}
+
+.my-form input[type = "text"], .my-form textarea{
+    padding: 8px;
+    width: 100%;
+}
+
+.button{
+    background-color: #ac2027;
+    color: #f5f5f5;
+    padding: 10px 15px;
+    border: none;
+}
+
+.block{
+    float: left;
+    width: 33.33%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#main-block{
+    float: left;
+    width: 70%;
+}
+
+#sidebar{
+    float: right;
+    width: 30%;
+    background-color: #ac2027;
+    color: #f5f5f5;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.p-box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    position: relative;
+    background-image: url('/images/alex-shutin-kKvQJ6rK6S4-unsplash.jpg'); 
+}
+
+.p-box h1 {
+    position: absolute; /*because absolute targets whatever position we want in the relative element, 
+    the parent element, p-box has to be positioned relative*/
+    top: 40px;
+    left: 200px;
+}
+
+.p-box h2{
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+}
+
+.fix-me{
+    position: fixed; /* keeps it in a fixed position */
+    top: 400px;
+}
+
+/*Psuedo classes */
+.my-list li:first-child{
+    background: #ac2027;
+}
+
+.my-list li:last-child{
+    background: blue;
+}
+
+.my-list li:nth-child(5){
+    background: yellow;
+}
+
+.my-list li:nth-child(even){
+    background: #fffaf1;
+}
