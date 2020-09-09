@@ -47,10 +47,9 @@ body{
     border: 5px blue solid;
 
     /*space between element and border*/
-    padding: 20px;
+   
 
-    /*space outside the border */
-    margin: 20px;
+
 }
 
 
