@@ -1,0 +1,114 @@
+
+body{
+    background-color: #f4f4f4;
+    color: #555555;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#main-header{
+    background-color: coral;
+    color: white;
+}
+
+#navbar{
+    background-color: #333;
+    color: #fff;
+}
+
+#navbar ul{
+    padding: 0;
+    list-style: none;
+}
+
+#navbar li{
+    display: inline;    
+}
+
+#navbar a{
+    text-decoration-style: none;
+    color: #f4f4f4;
+    padding-right: 15px;
+}
+
+.my-form{
+    padding-top: 10px;
+}
+
+#showcase{
+    background-image: url(/Technologies/CSS/my-website/orange-and-black-triangle-1920×1080.jpg);
+    background-position: top center;
+    min-height: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#showcase h1{
+    color: #fff;
+    font-size: 50px;
+    line-height: 1.6em;
+    padding-top: 30px;
+}
+
+.button {
+	background-color:#ff7f50;
+	border-radius:15px;
+	display:inline-block;
+	color:#ffffff;
+	font-size:16px;
+	padding:10px;
+    text-decoration:none;
+    border: 0;
+    margin-top: 5px;
+}
+
+#main-footer{
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.shoe{
+    float: left;
+    width: 50%;
+}
+
+.sidebar{
+    float: right;
+    width: 50%;
+    background: #ffffff;
+    color: #ff7f50;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+@media(max-width: 600px){
+    .shoe{
+        width: 100%;
+        float: none;
+    }
+
+    .sidebar{
+        width: 100%;
+        float: none;
+        margin-top: 10px;
+    }
+
+
+}
+
+
+
+
+
