@@ -24,8 +24,15 @@
 
                 /*Adding minmax and adding auto will allow the boxes to be flexible if content goes beyond 100px */
                 grid-auto-rows: minmax(100px, auto);
+            }
 
+            .nested{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
 
+                /*Auto rows allow for it to expand*/
+                grid-auto-rows: 70px;
+                grid-gap: 1em;
 
             }
 
@@ -36,6 +43,11 @@
 
             .wrapper > div:nth-child(odd){
                 background: skyblue;
+            }
+
+            .nested > div{
+                border: #333 1px solid;
+                padding: 1em;
             }
         </style>
 
@@ -58,13 +70,21 @@
                 <div>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptates ut labore veritatis illo accusantium cumque inventore eveniet minus qui sunt eius suscipit saepe, illum perspiciatis animi expedita. Iste ab nobis fugit consectetur repudiandae libero ipsam ipsa in beatae reiciendis?
                 </div>
-
+                
                 <div>
                     Lorem ipsum dolor sit.
                 </div>
 
-                <div>
-                    Lorem ipsum dolor sit.
+                <div class="nested">
+                    <div>Lorem</div>
+                    <div>Lorem</div>
+                    <div>Lorem</div>
+                    <div>Lorem</div>
+                    <div>Lorem</div>
+                    <div>Lorem</div>
+                    <div>Lorem</div>
+                    <div>Lorem</div>
+                    <div>Lorem</div>
                 </div>
 
                 <div>
