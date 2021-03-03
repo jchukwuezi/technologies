@@ -1,0 +1,16 @@
+.container{
+    border: solid black 1px;
+}
+
+
+p{
+    background-color: #c1272d;
+    color: #f5f5f5;
+    padding: 10px;
+}
+
+/*Note: that if something is in a container on the html side you can't take it out */
+p:nth-child(4){
+    margin-top: 500px;
+}
+

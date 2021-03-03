@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+}
+
+.parent{
+    margin-top: 10px;
+     background-color: aqua;
+     padding: 10px;
+     position: relative;
+}
+
+.child-one{
+    background-color: coral;
+    position: absolute;
+    top: 10px;
+}
+
+.child-two{
+    background-color: plum;
+}
+
+.child-three{
+    background-color: purple;
+}
