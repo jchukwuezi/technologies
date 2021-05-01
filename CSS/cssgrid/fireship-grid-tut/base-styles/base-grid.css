@@ -1,0 +1,9 @@
+/*This stylesheet is boilerplate from the tutorial to visually see the changes*/
+.base-grid{
+    display: grid;
+    gap: 1rem;
+
+    /*autofill = filling the column with as many rows as can fit (dynamic) */
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+

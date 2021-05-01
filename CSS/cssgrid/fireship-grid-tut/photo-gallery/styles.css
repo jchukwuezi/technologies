@@ -1,0 +1,21 @@
+.photo-grid{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-auto-rows: 240px;
+}
+
+
+/*media query for smaller-sized screens - rows/columns will do nothing when the screen is  < 600px*/
+@media screen and (min-width: 600px) {
+    /*creating a class --images will span 2 rows*/
+    .card-tall{
+        grid-row: span 2 / auto;
+    } 
+
+    /*creating a class --images will span 2 columns*/
+    .card-wide{
+        grid-column: span 2 / auto;
+    }     
+}
+

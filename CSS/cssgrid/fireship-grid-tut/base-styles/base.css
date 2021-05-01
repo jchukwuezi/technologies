@@ -1,0 +1,30 @@
+/*This stylesheet is boilerplate from the tutorial to visually see changes to the grid */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
+
+body{
+    background-color: #131313;
+    color: #fff; 
+    font-family: 'Raleway', sans-serif;
+}
+
+/*Card class that defines a flexbox that aligns it's content in the center */
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #353535;
+    font-size: 3rem;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card:hover{
+    transform: translateY(-3px) scale(1.1);
+}

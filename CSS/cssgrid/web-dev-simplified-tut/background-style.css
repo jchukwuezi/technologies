@@ -1,0 +1,37 @@
+/*This is from Web Dev Simplified Tutorial, Purely for Visualisation*/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+    font-family: Raleway;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #333;
+  height: 100%;
+  margin: 0;
+}
+
+.grid-container {
+  position: relative;
+  padding: 20px;
+  width: 100%;
+}
+
+.grid-item {
+  position: relative;
+  font-size: 25px;
+  padding: 20px;
+  padding-top: 50px;
+  background-color: #379AD6;
+  color: #222;
+  border: 1px solid white;
+}
+
+.grid-item:nth-child(odd) {
+  background-color: #5bbdfa;
+}
+
